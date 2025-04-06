@@ -18,7 +18,7 @@ GITHUB_TOKEN = '<github access token>'
 OWNER = '<github repository owner>'
 REPO_NAME = '<github repository name>'
 
-GITHUB_USER = '<github usernane>'
+GITHUB_USER = '<github username>'
 GITHUB_PASSWORD = '<github password>'
 ```
 3. Execute desired suite defined in package.json scripts:
@@ -40,7 +40,7 @@ In **playwright.config.ts** there are 3 projects configured:
 -  each runs it's specific set of tests using testMatch filtering
 -  each has it's specific baseUrl and prerequisite('setup' project) based on what kind of tests are executed
 - projects:     
-    - setup: it is used only as a prerequisite for E2e tests: the github login is performed once per test suite execution and storage state it is saved and reused for all tests
-    - e2e: project configuration for all UI E2E tests
-    - api: project configuration for all API tests
+    - **setup**: it is used only as a prerequisite for E2e tests: the github login is performed once per test suite execution and storage state it is saved and reused for all tests
+    - **e2e**: project configuration for all UI E2E tests
+    - **api**: project configuration for all API tests
 
