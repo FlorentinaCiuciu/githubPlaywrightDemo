@@ -12,6 +12,15 @@ $ git clone <path>
    $ npm install
    $ npx playwright install
 ```
+4. In config folder, edit **.env** file with environment variables:
+```bash
+GITHUB_TOKEN = '<github access token>'
+OWNER = '<github repository owner>'
+REPO_NAME = '<github repository name>'
+
+GITHUB_USER = '<github usernane>'
+GITHUB_PASSWORD = '<github password>'
+```
 3. Execute desired suite defined in package.json scripts:
 ```bash
 // run all API tests
